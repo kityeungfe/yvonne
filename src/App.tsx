@@ -87,7 +87,7 @@ const App : React.FC<IProp> = ():ReactElement => {
           </div>
         </CardContent>
         <CardFooter className={'mb-12'}>
-          <CardContent notIcon notFooter flexDirection='items-start'>
+          <CardContent notIcon notFooter flexDirection='items-start' xl='mx-10' lg='mx-5' sm='mx-3'>
             <div className="text-xl font-medium w-full">About Me</div>
             <div className="w-14 h-4 text-slate-500 my-2 rounded-full bg-[#2422c2] px-4"></div>
             <div className='my-6 flex flex-row space-x-6 justify-center'>
@@ -97,7 +97,7 @@ const App : React.FC<IProp> = ():ReactElement => {
               <img className="h-4 w-4" src={'./icon_instream.png'} alt="instream icon" />
             </div>
           </CardContent>
-          <CardContent notIcon notFooter flexDirection='items-start' className={'mt-6'}>
+          <CardContent notIcon notFooter flexDirection='items-start' xl='mx-10' lg='mx-5' sm='mx-3' className={'mt-6'}>
             <div className="text-xl font-medium w-full">About Me</div>
             <div className="w-14 h-4 text-slate-500 my-2 rounded-full bg-[#2422c2] px-4"></div>
             <div className='my-6 flex flex-row space-x-6 justify-center'>
@@ -107,7 +107,7 @@ const App : React.FC<IProp> = ():ReactElement => {
               <img className="h-4 w-4" src={'./icon_instream.png'} alt="instream icon" />
             </div>
           </CardContent>
-          <CardContent notIcon notFooter flexDirection='items-start' className={'mt-6'}>
+          <CardContent notIcon notFooter flexDirection='items-start' xl='mx-10' lg='mx-5' sm='mx-3' className={'mt-6'}>
             <div className="text-xl font-medium w-full">About Me</div>
             <div className="w-14 h-4 text-slate-500 my-2 rounded-full bg-[#2422c2] px-4"></div>
             <div className='my-6 flex flex-row space-x-6 justify-center'>

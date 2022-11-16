@@ -13,7 +13,10 @@ interface IProp {
     notIcon?: boolean
     notFooter?: boolean
     flexDirection?: string 
-    className?: string | undefined
+    className?: string | undefined,
+    xl?: string,
+    lg?: string,
+    sm?: string
 }
 
 const CardContent : React.FC<IProp> = ({
@@ -21,15 +24,21 @@ const CardContent : React.FC<IProp> = ({
     notIcon = false,
     notFooter = false,
     flexDirection = "items-center",
-    className
+    className,
+    xl,
+    lg,
+    sm
 }): ReactElement => {
 
     let style_pt: string = notIcon ? "pt-6 " : "pt-16 "
     let style_mt: string = notIcon ? " " : "mt-14 "
     let style_rounded: string = notFooter ? "rounded-3xl " : "rounded-t-3xl "
+    let xl_val: string = xl ? xl : "mx-64"
+    let lg_val: string = lg ? lg : "mx-32"
+    let sm_val: string = sm ? sm : "mx-12"
     
     return(
-        <div className={ "xl:mx-64 lg:mx-32 sm:mx-12 mx-10 pl-6 pr-6 bg-white shadow-xl flex flex-col " + flexDirection + " " + style_pt + style_mt + style_rounded + " " + className}>
+        <div className={ "xl:" + xl_val + " lg:" + lg_val + " sm:" + sm_val + " mx-10 pl-6 pr-6 bg-white shadow-xl flex flex-col " + flexDirection + " " + style_pt + style_mt + style_rounded + " " + className}>
             {children}
         </div>
     )
