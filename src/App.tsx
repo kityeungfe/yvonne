@@ -1,11 +1,3 @@
-/*
- * @Author: kityeungfe kityeungfe@outlook.com
- * @Date: 2022-08-23 03:23:44
- * @LastEditors: kityeungfe kityeungfe@outlook.com
- * @LastEditTime: 2022-08-23 04:40:43
- * @FilePath: \yvonne\src\App.tsx
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- */
 import { Carousel, Tooltip } from 'flowbite-react'
 import { Fragment, ReactElement } from 'react'
 import { Card } from './components/Card'
