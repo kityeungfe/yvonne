@@ -29,7 +29,7 @@ const CardContent : React.FC<IProp> = ({
     let style_rounded: string = notFooter ? "rounded-3xl " : "rounded-t-3xl "
     
     return(
-        <div className={ "xl:mx-64 lg:mx-32 sm:mx-12 mx-10 pl-6 pr-6 bg-white shadow-xl flex flex-col " + flexDirection + " " + style_pt + style_mt + style_rounded + " " + className}>
+        <div className={ "xl:mx-32 lg:mx-32 sm:mx-12 mx-10 pl-6 pr-6 bg-white shadow-xl flex flex-col " + flexDirection + " " + style_pt + style_mt + style_rounded + " " + className}>
             {children}
         </div>
     )
