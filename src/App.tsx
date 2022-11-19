@@ -76,6 +76,7 @@ const App : React.FC<IProp> = ():ReactElement => {
             are good at sociability, and have the courage to face challenges. 
             My motto is: do what I dare to do, think I dare to think.
           </p>
+          <br/>
           <div className="w-full h-96">
             <Carousel leftControl=" " rightControl=" " indicators={false}>
               <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..."/>
@@ -89,7 +90,7 @@ const App : React.FC<IProp> = ():ReactElement => {
             <img className="h-4 w-4" src={'./icon_whatsapp.png'} alt="whatsapp icon" />
             <img className="h-4 w-4" src={'./icon_wechat.png'} alt="wechat icon" />
             <img className="h-4 w-4" src={'./icon_facebook.png'} alt="facebook icon" />
-            <img className="h-4 w-4" src={'./icon_instream.png'} alt="instream icon" />
+            <img className="h-4 w-4" src={'./icon_instagram.png'} alt="instream icon" />
           </div>
           
         </CardContent>
