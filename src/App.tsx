@@ -5,6 +5,17 @@ import { CardContent } from './components/Card/CardContent'
 import { CardFooter } from './components/Card/CardFooter'
 import { CardIcon } from './components/Card/CardIcon'
 import { IconText } from './components/IconText'
+import avatar from './assets/avatar.jpg'
+import whatsapp from './assets/whatsapp.jpeg'
+import icon_whatsapp from './assets/icon_whatsapp.png'
+import instagram from './assets/instagram.png'
+import icon_wechat from './assets/icon_wechat.png'
+import icon_facebook from './assets/icon_facebook.png'
+import icon_instagram from './assets/icon_instagram.png'
+import icon_calendar from './assets/icon_calendar.png'
+import icon_position from './assets/icon_position.png'
+import icon_email from './assets/icon_email.png'
+import icon_phone from './assets/icon_phone.png'
 
 interface IProp {}
 
@@ -14,7 +25,7 @@ const App : React.FC<IProp> = ():ReactElement => {
     <Fragment>
       {/* personal profile */}
       <Card>
-        <CardIcon avatar='./avatar.jpg' />
+        <CardIcon avatar={avatar} />
         <CardContent>
           <div className="text-xl font-medium text-center">Yvonne Cheung</div>
           <div className='flex flex-row'>
@@ -26,32 +37,32 @@ const App : React.FC<IProp> = ():ReactElement => {
               style="light"
               content={(
                 <Fragment>
-                  <img className="h-56 w-56" src={'./whatsapp.jpeg'} alt="whatsapp qrcode" />
+                  <img className="h-56 w-56" src={whatsapp} alt="whatsapp qrcode" />
                 </Fragment>
               )}
             >
-              <img className="h-4 w-4 mx-4" src={'./icon_whatsapp.png'} alt="whatsapp icon" />
+              <img className="h-4 w-4 mx-4" src={icon_whatsapp} alt="whatsapp icon" />
             </Tooltip>
             <Tooltip 
               style="light"
               content={(
                 <Fragment>
-                  <img className="h-56 w-56" src={'./instagram.png'} alt="whatsapp qrcode" />
+                  <img className="h-56 w-56" src={instagram} alt="whatsapp qrcode" />
                 </Fragment>
               )}
             >
-              <img className="h-4 w-4 mx-4" src={'./icon_wechat.png'} alt="wechat icon" />
+              <img className="h-4 w-4 mx-4" src={icon_wechat} alt="wechat icon" />
             </Tooltip>
-            <img className="h-4 w-4 mx-4" src={'./icon_facebook.png'} alt="facebook icon" />
-            <img className="h-4 w-4 mx-4" src={'./icon_instagram.png'} alt="instagram icon" />
+            <img className="h-4 w-4 mx-4" src={icon_facebook} alt="facebook icon" />
+            <img className="h-4 w-4 mx-4" src={icon_instagram} alt="instagram icon" />
           </div>
         </CardContent>
         <CardFooter>
           <div className='flex flex-row justify-center h-1/2'>
-            <IconText icon='./icon_calendar.png' text='August 19, 1995' />
-            <IconText icon='./icon_position.png' text='Shuntak, China' />
-            <IconText icon='./icon_email.png' text='956863594@163.com' />
-            <IconText icon='./icon_phone.png' text='+86 150 1585 0220' />
+            <IconText icon={icon_calendar} text='August 19, 1995' />
+            <IconText icon={icon_position} text='Shuntak, China' />
+            <IconText icon={icon_email} text='956863594@163.com' />
+            <IconText icon={icon_phone} text='+86 150 1585 0220' />
           </div>
         </CardFooter>
       </Card>
@@ -79,10 +90,10 @@ const App : React.FC<IProp> = ():ReactElement => {
             </Carousel>
           </div>
           <div className='my-6 flex flex-row space-x-6 justify-center'>
-            <img className="h-4 w-4" src={'./icon_whatsapp.png'} alt="whatsapp icon" />
-            <img className="h-4 w-4" src={'./icon_wechat.png'} alt="wechat icon" />
-            <img className="h-4 w-4" src={'./icon_facebook.png'} alt="facebook icon" />
-            <img className="h-4 w-4" src={'./icon_instagram.png'} alt="instream icon" />
+            <img className="h-4 w-4" src={icon_whatsapp} alt="whatsapp icon" />
+            <img className="h-4 w-4" src={icon_wechat} alt="wechat icon" />
+            <img className="h-4 w-4" src={icon_facebook} alt="facebook icon" />
+            <img className="h-4 w-4" src={icon_instagram} alt="instream icon" />
           </div>
           
         </CardContent>
@@ -91,30 +102,30 @@ const App : React.FC<IProp> = ():ReactElement => {
             <div className="text-xl font-medium w-full">About Me</div>
             <div className="w-14 h-4 text-slate-500 my-2 rounded-full bg-[#2422c2] px-4"></div>
             <div className='my-6 flex flex-row space-x-6 justify-center'>
-              <img className="h-4 w-4" src={'./icon_whatsapp.png'} alt="whatsapp icon" />
-              <img className="h-4 w-4" src={'./icon_wechat.png'} alt="wechat icon" />
-              <img className="h-4 w-4" src={'./icon_facebook.png'} alt="facebook icon" />
-              <img className="h-4 w-4" src={'./icon_instagram.png'} alt="instream icon" />
+            <img className="h-4 w-4" src={icon_whatsapp} alt="whatsapp icon" />
+            <img className="h-4 w-4" src={icon_wechat} alt="wechat icon" />
+            <img className="h-4 w-4" src={icon_facebook} alt="facebook icon" />
+            <img className="h-4 w-4" src={icon_instagram} alt="instream icon" />
             </div>
           </CardContent>
           <CardContent notIcon notFooter flexDirection='items-start' xl='mx-10' lg='mx-5' sm='mx-3' className={'mt-6'}>
             <div className="text-xl font-medium w-full">About Me</div>
             <div className="w-14 h-4 text-slate-500 my-2 rounded-full bg-[#2422c2] px-4"></div>
             <div className='my-6 flex flex-row space-x-6 justify-center'>
-              <img className="h-4 w-4" src={'./icon_whatsapp.png'} alt="whatsapp icon" />
-              <img className="h-4 w-4" src={'./icon_wechat.png'} alt="wechat icon" />
-              <img className="h-4 w-4" src={'./icon_facebook.png'} alt="facebook icon" />
-              <img className="h-4 w-4" src={'./icon_instagram.png'} alt="instream icon" />
+            <img className="h-4 w-4" src={icon_whatsapp} alt="whatsapp icon" />
+            <img className="h-4 w-4" src={icon_wechat} alt="wechat icon" />
+            <img className="h-4 w-4" src={icon_facebook} alt="facebook icon" />
+            <img className="h-4 w-4" src={icon_instagram} alt="instream icon" />
             </div>
           </CardContent>
           <CardContent notIcon notFooter flexDirection='items-start' xl='mx-10' lg='mx-5' sm='mx-3' className={'mt-6'}>
             <div className="text-xl font-medium w-full">About Me</div>
             <div className="w-14 h-4 text-slate-500 my-2 rounded-full bg-[#2422c2] px-4"></div>
             <div className='my-6 flex flex-row space-x-6 justify-center'>
-              <img className="h-4 w-4" src={'./icon_whatsapp.png'} alt="whatsapp icon" />
-              <img className="h-4 w-4" src={'./icon_wechat.png'} alt="wechat icon" />
-              <img className="h-4 w-4" src={'./icon_facebook.png'} alt="facebook icon" />
-              <img className="h-4 w-4" src={'./icon_instagram.png'} alt="instream icon" />
+            <img className="h-4 w-4" src={icon_whatsapp} alt="whatsapp icon" />
+            <img className="h-4 w-4" src={icon_wechat} alt="wechat icon" />
+            <img className="h-4 w-4" src={icon_facebook} alt="facebook icon" />
+            <img className="h-4 w-4" src={icon_instagram} alt="instream icon" />
             </div>
           </CardContent>
         </CardFooter>
