@@ -5,7 +5,7 @@ interface IProp {
     text: string
 }
 
-/** just for test dangerjs */
+/** just for test dangerjs vconsole */
 const IconText : React.FC<IProp> = ({
     icon,
     text
